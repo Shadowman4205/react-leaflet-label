@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LiveBy/react-leaflet.label.git"
+    "url": "git+https://github.com/LiveBy/react-leaflet-label.git"
   },
   "keywords": [
     "react",
@@ -20,9 +20,9 @@
   "author": "Joel Gimbel <jgimbel@live.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LiveBy/react-leaflet.label/issues"
+    "url": "https://github.com/LiveBy/react-leaflet-label/issues"
   },
-  "homepage": "https://github.com/LiveBy/react-leaflet.label#readme",
+  "homepage": "https://github.com/LiveBy/react-leaflet-label#readme",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.9.0",
