@@ -1,5 +1,5 @@
 {
-  "name": "react-leaflet.label",
+  "name": "react-leaflet-label",
   "version": "1.0.0",
   "description": "react implementation of Leaflet.label",
   "main": "index.js",
