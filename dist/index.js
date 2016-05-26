@@ -14,11 +14,7 @@ var _reactDom = require('react-dom');
 
 var _leaflet = require('leaflet');
 
-var _MapComponent2 = require('./MapComponent');
-
-var _MapComponent3 = _interopRequireDefault(_MapComponent2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _reactLeaflet = require('react-leaflet');
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
@@ -112,7 +108,7 @@ var Label = function (_MapComponent) {
   }]);
 
   return Label;
-}(_MapComponent3.default);
+}(_reactLeaflet.MapComponent);
 
 Label.propTypes = {
   children: _react.PropTypes.node,
