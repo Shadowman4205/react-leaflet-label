@@ -2,7 +2,7 @@
   "name": "react-leaflet-label",
   "version": "1.0.0",
   "description": "react implementation of Leaflet.label",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"No Tests yet :(\"",
     "start": "babel lib -d dist"
