@@ -4,7 +4,8 @@
   "description": "react implementation of Leaflet.label",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No Tests yet :(\""
+    "test": "echo \"No Tests yet :(\"",
+    "start": "babel lib -d dist"
   },
   "repository": {
     "type": "git",
