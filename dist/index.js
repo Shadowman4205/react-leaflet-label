@@ -113,7 +113,6 @@ var Label = function (_MapComponent) {
 Label.propTypes = {
   children: _react.PropTypes.node,
   map: _react.PropTypes.instanceOf(_leaflet.Map),
-  popupContainer: _react.PropTypes.object,
-  position: latlngType
+  popupContainer: _react.PropTypes.object
 };
 exports.default = Label;
