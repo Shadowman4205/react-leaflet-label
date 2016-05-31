@@ -67,7 +67,7 @@ var Label = function (_MapComponent) {
       if (labelContainer) {
         labelContainer.bindLabel(el);
       }
-      map.addLayer(el);
+      map.showLabel(el);
     }
   }, {
     key: 'componentDidUpdate',

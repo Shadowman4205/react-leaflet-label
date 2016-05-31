@@ -27,7 +27,7 @@ export default class Label extends MapComponent {
    if( labelContainer ) {
      labelContainer.bindLabel(el)
    }
-   map.addLayer(el)
+   map.showLabel(el)
    
   }
   
