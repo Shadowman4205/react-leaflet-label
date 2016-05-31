@@ -15,7 +15,7 @@ export default class Label extends MapComponent {
   componentWillMount() {
     super.componentWillMount()
     const { children: _children, map: _map, labelContainer, ...props } = this.props
-    this.leafletElement = label(props, labelContainer);
+    this.leafletElement = new label(props, labelContainer);
     this.leafletElement.on('open', ::this.renderLabelContent)
     this.leafletElement.on('close', ::this.removeLabelContent)    
   }
