@@ -1,6 +1,7 @@
 import { Children, PropTypes } from 'react';
 import { render, unmountComponentAtNode} from 'react-dom'
-import { Map, label } from 'leaflet'
+import { Map } from 'leaflet'
+import label from './label'
 
 import { MapComponent } from 'react-leaflet'
 
@@ -8,7 +9,7 @@ export default class Label extends MapComponent {
   static propTypes = {
     children: PropTypes.node,
     map: PropTypes.instanceOf(Map),
-    popupContainer: PropTypes.object 
+    labelContainer: PropTypes.object
   }
   
   componentWillMount() {
