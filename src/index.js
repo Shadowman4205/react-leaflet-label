@@ -23,7 +23,7 @@ export default class Label extends MapComponent {
   componentDidMount() {
     const { map, labelContainer, position, latlng } = this.props
     const el = this.leafletElement
-    el._showLabel({ latlng })
+    el.setLatLng( latlng )
     
     if( labelContainer ) {
       labelContainer.bindLabel(el)
