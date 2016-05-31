@@ -61,8 +61,10 @@ var Label = function (_MapComponent) {
       var map = _props2.map;
       var labelContainer = _props2.labelContainer;
       var position = _props2.position;
+      var latlng = _props2.latlng;
 
       var el = this.leafletElement;
+      el._showLabel({ latlng: latlng });
 
       if (labelContainer) {
         labelContainer.bindLabel(el);
