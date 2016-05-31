@@ -14,7 +14,13 @@ var _reactDom = require('react-dom');
 
 var _leaflet = require('leaflet');
 
+var _label = require('./label');
+
+var _label2 = _interopRequireDefault(_label);
+
 var _reactLeaflet = require('react-leaflet');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
@@ -44,7 +50,7 @@ var Label = function (_MapComponent) {
 
       var props = _objectWithoutProperties(_props, ['children', 'map', 'labelContainer']);
 
-      this.leafletElement = (0, _leaflet.label)(props, labelContainer);
+      this.leafletElement = new _label2.default(props, labelContainer);
       this.leafletElement.on('open', this.renderLabelContent.bind(this));
       this.leafletElement.on('close', this.removeLabelContent.bind(this));
     }
@@ -113,6 +119,6 @@ var Label = function (_MapComponent) {
 Label.propTypes = {
   children: _react.PropTypes.node,
   map: _react.PropTypes.instanceOf(_leaflet.Map),
-  popupContainer: _react.PropTypes.object
+  labelContainer: _react.PropTypes.object
 };
 exports.default = Label;
