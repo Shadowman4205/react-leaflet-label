@@ -4,7 +4,9 @@ var _leafletHeadless = require("leaflet-headless");
 
 var _leafletHeadless2 = _interopRequireDefault(_leafletHeadless);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+	return obj && obj.__esModule ? obj : { default: obj };
+}
 
 !function (t) {
 	_leafletHeadless2.default.labelVersion = "0.2.2-dev", module.exports = _leafletHeadless2.default.Label = _leafletHeadless2.default.Class.extend({ includes: _leafletHeadless2.default.Mixin.Events, options: { className: "", clickable: !1, direction: "right", noHide: !1, offset: [12, -15], opacity: 1, zoomAnimation: !0 }, initialize: function initialize(t, i) {
